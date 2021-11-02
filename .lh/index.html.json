@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1635692556105,
@@ -44,6 +44,10 @@
                 {
                     "date": 1635762436013,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       </div>\r\n   \r\n       <!-- Control -->\r\n       <div class=\"control\">\r\n-        <div class=\"btn btn-repeat\">\r\n+        <div class=\"btn btn-repeat active\">\r\n           <i class=\"fas fa-redo\"></i>\r\n         </div>\r\n         <div class=\"btn btn-prev\">\r\n           <i class=\"fas fa-step-backward\"></i>\r\n@@ -43,9 +43,9 @@\n         </div>\r\n         <div class=\"btn btn-next\">\r\n           <i class=\"fas fa-step-forward\"></i>\r\n         </div>\r\n-        <div class=\"btn btn-random active\">\r\n+        <div class=\"btn btn-random \">\r\n           <i class=\"fas fa-random\"></i>\r\n         </div>\r\n       </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1635839167242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,8 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Music player</title>\r\n     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css\" integrity=\"sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==\" crossorigin=\"anonymous\" />\r\n     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n     <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap\" rel=\"stylesheet\">\r\n@@ -30,9 +28,9 @@\n       </div>\r\n   \r\n       <!-- Control -->\r\n       <div class=\"control\">\r\n-        <div class=\"btn btn-repeat active\">\r\n+        <div class=\"btn btn-repeat\">\r\n           <i class=\"fas fa-redo\"></i>\r\n         </div>\r\n         <div class=\"btn btn-prev\">\r\n           <i class=\"fas fa-step-backward\"></i>\r\n"
                 }
             ],
             "date": 1635692556105,
