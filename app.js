@@ -56,7 +56,7 @@ const app = {
               <h3 class="title">${song.name}</h3>
               <p class="author">${song.singer}</p>
             </div>
-            <div class="option">
+            <div class="option num${index}">
               <i class="far fa-heart"></i>
             </div>
           </div>`
@@ -211,11 +211,11 @@ const app = {
                  if(optionNode){
                     if(app.isHeart){
                       app.isHeart = false;
-                      e.target.style.color = "#999";
+                      $('.option.num'+index+ ' i').style.color = "#999";
                     }else{
                       app.isHeart = true;
                       console.log(app.isHeart)
-                      e.target.style.color = "#dd869d";
+                      $('.option.num'+index+ ' i').style.color = "#dd869d";
                     }
 
                 }

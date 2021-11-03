@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 471,
+            "activePatchIndex": 484,
             "patches": [
                 {
                     "date": 1635692083007,
@@ -1892,6 +1892,58 @@
                 {
                     "date": 1635911283860,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,14 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      optionBtn.style.color = \"#999\";\r\n+                      e.target.style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      optionBtn.style.color = \"#dd869d\";\r\n-\r\n+                      e.target.style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635911727563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      e.target.style.color = \"#999\";\r\n+                      $('.option i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      e.target.style.color = \"#dd869d\";\r\n+                      $('.option i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635911760057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $('.option i').style.color = \"#999\";\r\n+                      $$('.option i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $('.option i').style.color = \"#dd869d\";\r\n+                      $$('.option i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635911838373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <div class=\"body\">\r\n               <h3 class=\"title\">${song.name}</h3>\r\n               <p class=\"author\">${song.singer}</p>\r\n             </div>\r\n-            <div class=\"option\">\r\n+            <div class=\"option-${index}\">\r\n               <i class=\"far fa-heart\"></i>\r\n             </div>\r\n           </div>`\r\n         });\r\n"
+                },
+                {
+                    "date": 1635912012820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $$('.option i').style.color = \"#999\";\r\n+                      $$('.option-'+index+'i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $$('.option i').style.color = \"#dd869d\";\r\n+                      $$('.option-'+index+'i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635912062105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $$('.option-'+index+'i').style.color = \"#999\";\r\n+                      $$('.option i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $$('.option-'+index+'i').style.color = \"#dd869d\";\r\n+                      $$('.option i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635912079426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <div class=\"body\">\r\n               <h3 class=\"title\">${song.name}</h3>\r\n               <p class=\"author\">${song.singer}</p>\r\n             </div>\r\n-            <div class=\"option-${index}\">\r\n+            <div class=\"option\">\r\n               <i class=\"far fa-heart\"></i>\r\n             </div>\r\n           </div>`\r\n         });\r\n"
+                },
+                {
+                    "date": 1635912140866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <div class=\"body\">\r\n               <h3 class=\"title\">${song.name}</h3>\r\n               <p class=\"author\">${song.singer}</p>\r\n             </div>\r\n-            <div class=\"option\">\r\n+            <div class=\"option ${index}}\">\r\n               <i class=\"far fa-heart\"></i>\r\n             </div>\r\n           </div>`\r\n         });\r\n"
+                },
+                {
+                    "date": 1635912243746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $$('.option i').style.color = \"#999\";\r\n+                      $$('.option.'+index + ' i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $$('.option i').style.color = \"#dd869d\";\r\n+                      $$('.option.'+index + ' i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635912372540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <div class=\"body\">\r\n               <h3 class=\"title\">${song.name}</h3>\r\n               <p class=\"author\">${song.singer}</p>\r\n             </div>\r\n-            <div class=\"option ${index}}\">\r\n+            <div class=\"option num${index}}\">\r\n               <i class=\"far fa-heart\"></i>\r\n             </div>\r\n           </div>`\r\n         });\r\n"
+                },
+                {
+                    "date": 1635912385041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <div class=\"body\">\r\n               <h3 class=\"title\">${song.name}</h3>\r\n               <p class=\"author\">${song.singer}</p>\r\n             </div>\r\n-            <div class=\"option num${index}}\">\r\n+            <div class=\"option num${index}\">\r\n               <i class=\"far fa-heart\"></i>\r\n             </div>\r\n           </div>`\r\n         });\r\n"
+                },
+                {
+                    "date": 1635912492135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $$('.option.'+index + ' i').style.color = \"#999\";\r\n+                      $('.option.num'+index+ ' i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $$('.option.'+index + ' i').style.color = \"#dd869d\";\r\n+                      $('.option.num'+index+ ' i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635912513574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $('.option.num'+index+ ' i').style.color = \"#999\";\r\n+                      $('.option.num'+index+ 'i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $('.option.num'+index+ ' i').style.color = \"#dd869d\";\r\n+                      $('.option.num'+index+ 'i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
+                },
+                {
+                    "date": 1635912521135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n                 }\r\n                  if(optionNode){\r\n                     if(app.isHeart){\r\n                       app.isHeart = false;\r\n-                      $('.option.num'+index+ 'i').style.color = \"#999\";\r\n+                      $('.option.num'+index+ ' i').style.color = \"#999\";\r\n                     }else{\r\n                       app.isHeart = true;\r\n                       console.log(app.isHeart)\r\n-                      $('.option.num'+index+ 'i').style.color = \"#dd869d\";\r\n+                      $('.option.num'+index+ ' i').style.color = \"#dd869d\";\r\n                     }\r\n \r\n                 }\r\n             }\r\n"
                 }
             ],
             "date": 1635692083007,
