@@ -24,6 +24,7 @@ const nextBtn = $('.btn-next')
 const prevBtn = $('.btn-prev');
 const randomBtn = $('.btn-random')
 const RepeatBtn =$('.btn-repeat');
+
 const app = {
     // lấy ra chỉ mục đầu tiên của mảng
     currenindex : 0,
@@ -31,6 +32,7 @@ const app = {
     isRandom : false,
     isRepeat : false,
     isAdd : false,
+    isHeart : false,
     defiProperties : function(){
         Object.defineProperty(this,'currentSong',{
             get : function(){
@@ -55,7 +57,7 @@ const app = {
               <p class="author">${song.singer}</p>
             </div>
             <div class="option">
-              <i class="fas fa-ellipsis-h"></i>
+              <i class="far fa-heart"></i>
             </div>
           </div>`
         });
@@ -75,6 +77,7 @@ const app = {
     handlerevents: function(){
         const currentWidth = cd.offsetWidth;
         const songlist = $$('.song')
+        const optionBtn = $('.option')
         // Xử lý cho đĩa quay
 
      const cdThumbanimation = cdThumb.animate([
@@ -206,7 +209,15 @@ const app = {
                   }
                 }
                  if(optionNode){
-                    song.style.opacity = 1;
+                    if(app.isHeart){
+                      app.isHeart = false;
+                      e.target.style.color = "#999";
+                    }else{
+                      app.isHeart = true;
+                      console.log(app.isHeart)
+                      e.target.style.color = "#dd869d";
+                    }
+
                 }
             }
         });

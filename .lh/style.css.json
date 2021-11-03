@@ -3,11 +3,35 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1635771923333,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1635909340414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,11 @@\n   header {\r\n     text-align: center;\r\n     margin-bottom: 10px;\r\n   }\r\n-  \r\n+  .option i{\r\n+    color: #999;\r\n+  }\r\n   header h4 {\r\n     color: var(--primary-color);\r\n     font-size: 12px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1635909386290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,11 @@\n   }\r\n   .option i{\r\n     color: #999;\r\n   }\r\n+  .option{\r\n+    padding: 10px;\r\n+  }\r\n   header h4 {\r\n     color: var(--primary-color);\r\n     font-size: 12px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1635909403226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n   .option i{\r\n     color: #999;\r\n   }\r\n   .option{\r\n-    padding: 10px;\r\n+    padding: 5px;\r\n   }\r\n   header h4 {\r\n     color: var(--primary-color);\r\n     font-size: 12px;\r\n"
+                },
+                {
+                    "date": 1635911298296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,11 +54,9 @@\n   }\r\n   .option i{\r\n     color: #999;\r\n   }\r\n-  .option{\r\n-    padding: 5px;\r\n-  }\r\n+\r\n   header h4 {\r\n     color: var(--primary-color);\r\n     font-size: 12px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1635911305767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n     margin-bottom: 10px;\r\n   }\r\n   .option i{\r\n     color: #999;\r\n+    padding: 5px;\r\n   }\r\n \r\n   header h4 {\r\n     color: var(--primary-color);\r\n"
+                },
+                {
+                    "date": 1635911316682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     margin-bottom: 10px;\r\n   }\r\n   .option i{\r\n     color: #999;\r\n-    padding: 5px;\r\n+    padding: 5px 3px;\r\n   }\r\n \r\n   header h4 {\r\n     color: var(--primary-color);\r\n"
                 }
             ],
             "date": 1635771923333,
